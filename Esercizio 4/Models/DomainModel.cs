@@ -8,9 +8,9 @@ namespace Esercizio_4.Models
 	public class DomainModel
 	{
 		Fasulla fasulla = new Fasulla() ;
-		public List<Menu> GetLista()
+		public List<Menu> GetLista(string a)
 		{
-			return fasulla.GetLista();
+			return fasulla.GetLista(a);
 		}
 
 		public Menu Search(int id)
@@ -36,8 +36,9 @@ namespace Esercizio_4.Models
 	}
 	public class Fasulla
 	{
-		public List<Menu> GetLista()
+		public List<Menu> GetLista(string a)
 		{
+
 			return new List<Menu> {
 				new Menu { Id=1,Data=DateTime.Now,Pasto="Pranzo",Giorno="Giovedi"} ,
 				new Menu { Id=2,Data=DateTime.Now.AddDays(1),Pasto="Pranzo",Giorno="Venerdi"},

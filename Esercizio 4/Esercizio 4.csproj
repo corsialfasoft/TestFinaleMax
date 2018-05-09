@@ -207,6 +207,7 @@
     </Content>
     <Content Include="Database\DaCiccioDLL.sql" />
     <Content Include="Database\DDL.sql" />
+    <Content Include="Database\Procedure.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
