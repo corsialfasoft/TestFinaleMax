@@ -37,7 +37,7 @@ namespace Esercizio_4.Controllers
 			return View();
 		}
 		[HttpPost]
-		public ActionResult AddMenu(DateTime data,
+		public ActionResult AddToMenu(DateTime data,
 		string pasto,
 		string giorno,
 		string primo,
@@ -52,6 +52,7 @@ namespace Esercizio_4.Controllers
 				throw e;
 
 			} 
+			ViewBag.ListaMenu=dm.GetLista();
 			ViewBag.Message="Menu aggiunto";
 			return View("ListaMenu");
 

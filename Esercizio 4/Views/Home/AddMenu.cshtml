@@ -3,7 +3,7 @@
 }
 <h2>@ViewBag.Title.</h2>
 
-@using(Html.BeginForm("Home","AddMenu",FormMethod.Post)) { 
+@using(Html.BeginForm("AddToMenu","Home",FormMethod.Post)) { 
 <div class="container">
     <div class="row">
         <div class="col-md-3">
@@ -61,6 +61,6 @@
             <input type="text" name="dolce" placeholder="Inserisci il dolce" required />
         </div>
     </div>
-    <input type="button" value="Aggiungi"/>
+    <input type="submit" class="btn-btn" value="Aggiungi"/>
 </div>
 }
