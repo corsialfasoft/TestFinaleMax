@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Dettaglio del prodotto";
+}
+
+<div class=" container">
+    <div class="row">
+        <div class="col-md-5">
+            Codice
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Id
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            Giorno
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Data.ToShortDateString()
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            Pasto
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Pasto
+        </div>
+    </div><br />
+    <div class="row">
+        <div class="col-md-5">
+            Primo
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Primo
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            Secondo
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Secondo
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            Contorno
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Contorno
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            Dolce
+        </div>
+        <div class="col-md-5">
+            @ViewBag.Menu.Dolce
+        </div>
+    </div>
+</div>
+

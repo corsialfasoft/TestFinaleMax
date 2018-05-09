@@ -19,7 +19,7 @@
             </div>
         </div>
         <hr />
-        @foreach(var p in @ViewBag.Menu) {
+        @foreach(var p in @ViewBag.ListaMenu) {
             <div class="row">
                 <div class="col-md-2">
                     @p.Id
@@ -34,7 +34,7 @@
                     @p.Pasto
                 </div>
                 <div class="col-md-2">
-                    <a class="btn btn-default" href="/Home/Detail/@p.Id">Dettagli</a>
+                    <a class="btn btn-default" href="/Home/Dettaglio/@p.Id">Dettagli</a>
                 </div>
             </div>
         }
