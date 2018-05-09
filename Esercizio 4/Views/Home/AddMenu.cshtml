@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Aggiungi un menu";
+}
+<h2>@ViewBag.Title.</h2>
+
+@using(Html.BeginForm("Home","AddMenu",FormMethod.Post)) { 
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <label>Data</label>
+        </div>
+        <div class="col-md-3">
+            <input type="date" name="data" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Giorno</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="giorno" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Pasto</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="pasto" required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Primo</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="primo" placeholder="Inserisci il primo..." required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Secondo</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="secondo" placeholder="Inserisci il secondo..." required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Contorno</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="contorno" placeholder="Inserisci il contorno..." required/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label>Dolce</label>
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="dolce" placeholder="Inserisci il dolce" required />
+        </div>
+    </div>
+    <input type="button" value="Aggiungi"/>
+</div>
+}

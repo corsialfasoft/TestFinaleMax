@@ -30,11 +30,31 @@ namespace Esercizio_4.Controllers
 		{
 			return View();
 		}
-		public ActionResult Contact()
+		public ActionResult AddMenu()
 		{
 			ViewBag.Message = "Your contact page.";
 
 			return View();
+		}
+		[HttpPost]
+		public ActionResult AddMenu(DateTime data,
+		string pasto,
+		string giorno,
+		string primo,
+		string secondo,
+		string contorno,
+		string dolce)
+		{
+			Menu nuovo = new Menu { Data=data,Pasto=pasto,Primo=primo,Secondo=secondo,Giorno=giorno,Contorno=contorno,Dolce=dolce};
+			try { 
+			dm.Add(nuovo);
+			}catch(Exception e) {
+				throw e;
+
+			} 
+			ViewBag.Message="Menu aggiunto";
+			return View("ListaMenu");
+
 		}
 	}
 }

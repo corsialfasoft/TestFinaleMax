@@ -17,6 +17,10 @@ namespace Esercizio_4.Models
 		{
 			return fasulla.Search(id);
 		}
+		public void Add(Menu menu)
+		{
+		 fasulla.Add(menu);
+		}
 	}
 	public class Menu
 	{
@@ -46,6 +50,11 @@ namespace Esercizio_4.Models
 		public Menu Search(int id)
 		{
 			return new Menu { Id=77,Data=DateTime.Now, Pasto="Pranzo",Giorno="Mercoledi", Primo="Orecchiette alle cime di nutria", Secondo="Stufato di nutria",Contorno="Patate fritte",Dolce="Nutria Glassata"};
+		}
+
+		public void Add(Menu menu)
+		{
+			
 		}
 	}
 }
