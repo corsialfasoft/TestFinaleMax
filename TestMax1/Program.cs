@@ -12,7 +12,7 @@ namespace TestMax1
 		{
 
 			int k = StampaPari();
-			StampaDispari(k-1);
+			StampaDispari(k - 1);
 		}
 		public static int StampaPari()
 		{
@@ -30,7 +30,7 @@ namespace TestMax1
 		{
 			while(d >= 1) {
 				Console.WriteLine($"...Numero dispari:{d}");
-				d-=2;
+				d -= 2;
 			}
 		}
 	}
